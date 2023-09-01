@@ -29,11 +29,11 @@ export type DepartamentoNom =
   | 'BOYACA';
 
 export type Sexo = 'F' | 'M';
-type FuenteTipoContagio = 'Comunitaria' | 'Relacionado';
-type Ubicacion = 'Casa' | 'Fallecido' | 'N/A';
-type Estado = 'Leve' | 'Fallecido' | 'N/A';
-type Recuperado = 'Recuperado' | 'Fallecido' | 'N/A';
-type TipoRecuperacion = 'Tiempo' | 'PCR';
+export type FuenteTipoContagio = 'Comunitaria' | 'Relacionado';
+export type Ubicacion = 'Casa' | 'Fallecido' | 'N/A';
+export type Estado = 'Leve' | 'Fallecido' | 'N/A';
+export type Recuperado = 'Recuperado' | 'Fallecido' | 'N/A';
+export type TipoRecuperacion = 'Tiempo' | 'PCR';
 
 export interface Person {
   fecha_reporte_web: string;
