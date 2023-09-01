@@ -1,0 +1,39 @@
+{
+	"info": {
+		"_postman_id": "265722d4-1bd3-4990-a625-33c13d517f32",
+		"name": "Superpayments",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17416150"
+	},
+	"item": [
+		{
+			"name": "http://localhost:3000/data-covid?sex=F&groupAge=0-20",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/data-covid?sex=F&groupAge=0-20",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"data-covid"
+					],
+					"query": [
+						{
+							"key": "sex",
+							"value": "F"
+						},
+						{
+							"key": "groupAge",
+							"value": "0-20"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
