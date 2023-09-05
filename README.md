@@ -1,17 +1,10 @@
 # Solución backend
 
-## Correr base de datos
+## Correr el proyecto (tanto la base de datos como el backend)
 
 ```
 docker compose build
 docker compose up
-```
-
-## Correr proyecto localmente
-
-```
-npm i
-npm run start:dev
 ```
 
 En la colección de postman estan los endpoints pedidos
