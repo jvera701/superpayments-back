@@ -36,5 +36,3 @@ lerna-debug.log*
 
 *.http
 /postgres_data
-
-*.dto.ts

@@ -1,9 +1,11 @@
-# Solución al punto 1 de la prueba técnica
+# Solución backend
 
 ## Correr
 
 ```
 docker compose up
+npm i
+npm run start:dev
 ```
 
-En la colección de postman esta el endpoint necesario
+En la colección de postman estan los endpoints pedidos

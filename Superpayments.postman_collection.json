@@ -34,6 +34,39 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "http://localhost:3000/person",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/person?sex=M&state=Leve&city=CALI",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"person"
+					],
+					"query": [
+						{
+							"key": "sex",
+							"value": "M"
+						},
+						{
+							"key": "state",
+							"value": "Leve"
+						},
+						{
+							"key": "city",
+							"value": "CALI"
+						}
+					]
+				}
+			},
+			"response": []
 		}
 	]
 }

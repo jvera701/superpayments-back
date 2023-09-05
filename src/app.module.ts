@@ -2,7 +2,6 @@ import { Module } from '@nestjs/common';
 import { ScheduleModule } from '@nestjs/schedule';
 import { ConfigModule } from '@nestjs/config';
 
-import { AppController } from './app.controller';
 import { CovidDataModule } from './covid-data/covid-data.module';
 import { DatabaseModule } from './database/database.module';
 import { PersonModule } from './person/person.module';
@@ -17,6 +16,5 @@ import { PersonModule } from './person/person.module';
     ScheduleModule.forRoot(),
     DatabaseModule,
   ],
-  controllers: [AppController],
 })
 export class AppModule {}
