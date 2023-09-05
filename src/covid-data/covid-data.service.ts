@@ -2,7 +2,7 @@ import { HttpService } from '@nestjs/axios';
 import { Injectable } from '@nestjs/common';
 import { firstValueFrom } from 'rxjs';
 
-import { Person, PersonQueryParams } from '../interfaces';
+import { Person, PersonAgeQueries } from '../interfaces';
 
 @Injectable()
 export class CovidDataService {
@@ -16,7 +16,7 @@ export class CovidDataService {
 
   endpoint = 'https://www.datos.gov.co/resource/gt2j-8ykr.json';
 
-  private async getAll(): Promise<Person[]> {
+  public async getAll(): Promise<Person[]> {
     try {
       const response = await firstValueFrom(
         this.httpService.get(this.endpoint),
@@ -27,7 +27,7 @@ export class CovidDataService {
     }
   }
 
-  public async getByFilter(params: PersonQueryParams) {
+  public async getByFilter(params: PersonAgeQueries) {
     const { sex, groupAge } = params;
     const data = await this.getAll();
 

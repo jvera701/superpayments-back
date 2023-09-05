@@ -1,12 +1,10 @@
 services:
-  app:
-    build:
-      context: .
-      dockerfile: Dockerfile
-    container_name: nest-docker-postgres
-    environment:
-      - PORT=3000
+  postgres:
+    container_name: db
+    image: postgres
     ports:
-      - '3000:3000'
+      - '5432:5432'
+    env_file:
+      - .env
     volumes:
-      - ./src:/app/src
+      - ./postgres_data:/var/lib/postgresql/data

@@ -59,7 +59,13 @@ export interface Person {
   nom_grupo_?: string;
 }
 
-export interface PersonQueryParams {
+export interface PersonAgeQueries {
   sex?: Sexo;
   groupAge?: string;
+}
+
+export interface PersonLocationQueries {
+  sex?: Sexo;
+  state?: Estado;
+  city?: string;
 }
